@@ -1,4 +1,4 @@
-== README
+README
 
 Back End of the Blog and Portfolio.
 
