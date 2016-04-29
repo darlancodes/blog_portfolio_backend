@@ -11,8 +11,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new post_params
-
+    @post = Post.new(post_params)
     #If the post saves correctly....
     if @post.save
       redirect_to @post, notice: "Congrats Darlan! Successfully saved :)"
@@ -33,7 +32,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    if @post.update post_params #Just put the name of the method after the method of updating database, fo fill in the parameters
+    if @post.update(post_params) #Just put the name of the method after the method of updating database, fo fill in the parameters
       redirect_to @post, notice:  "Article saved Buddy !"
     else
       render 'edit'
