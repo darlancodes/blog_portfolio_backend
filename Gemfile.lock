@@ -76,6 +76,8 @@ GEM
     mysql2 (0.4.4)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    normalize-scss (4.1.0)
+      sass (~> 3.3)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -148,6 +150,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (>= 0.3.13, < 0.5)
+  normalize-scss (~> 4.1)
   rails (= 4.2.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
