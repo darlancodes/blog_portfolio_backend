@@ -1,0 +1,175 @@
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #EC6A5C;
+$border:#E9E9E9;
+
+@import 'normalize';
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  /*Não permite que o padding seja adicionado ao width
+  de cada coluna*/
+}
+
+.wrapper{
+  width:90%;/*90% da página, o q significa que a largura
+  ocupa 90% do view port*/
+  margin:0 auto;
+  /*Centralizado em 90% do view_port*/
+}
+
+.skinny_wrapper{
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.wrapper_padding{
+  padding: 4rem 0; /*4rem top and bottom, 0 right and left*/
+}
+
+.clearfix:before,
+.clearfix:after{
+  content: " ";
+  display: table;
+}
+.clearfix:after{
+  clear:both;
+}
+
+#page_title{
+  text-align: center;
+  border-bottom: 1px solid $border;
+  padding: 2em 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+#main_navigation{
+  padding: 1.9em /*->top e bottom*/ 5% /*->each side*/;
+  border-bottom: 1.5px solid $border;
+  .name{
+    font-weight: 700;
+    font-size: .8em;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    border-radius: 2em 0 2em 0;
+    border: 2px solid $border;
+    padding: 1rem /*->all sides*/;
+    text-decoration: none;
+    color: $dark;
+    float:left;
+  }
+  nav{
+    float: right;
+    padding: 1.5rem;
+    a {
+      color: $dark;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+      &:hover{
+        color: $highlight;
+      }
+    }
+  }
+}
+
+@import 'welcome';
+@import 'post_project';
+
+h1,h2,h3,h4,h5,h6,p,ul,li{
+  color: $dark;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.75rem;
+}
+h4{
+  font-size: 1.375rem;
+}
+h5{
+  font-size: 1.25rem;
+}
+h6{
+  font-size: 1rem;
+}
+
+p, li{
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+p, ul,ol{
+  margin: 0 0 1.6em 0;
+}
+
+hr{
+  width: 3em;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid $highlight;
+  margin: 2rem 0;
+}
+
+#main_footer{
+  padding: 1.9em /*->top e bottom*/ 5% /*->each side*/;
+  border-top: 1.5px solid $border;
+  .copyright{
+    float:left;
+    font-size: .9em;
+    margin: 0;
+  }
+  nav {
+    float: right;
+    padding: 0 3.3rem 0 0;
+    i{
+      color: $dark;
+      margin-left: 1rem;
+      padding-top: .2em;
+      &:hover{
+        color: $highlight;
+      }
+    }
+  }
+}
+
+input[type="text"], input[type="email"], input[type="password"],
+textarea{
+  width: 100%;
+  max-width: 100%;
+  height: 3em;
+  border: 2px solid $border;
+  padding: 1em;
+  margin: .5em 0 2em 0;
+  border-radius: .5em;
+}
+
+textarea{
+  min-height: 13em;
+}
+
+input[type="submit"]{
+  outline: none;
+  background: transparent;
+  border: 2px solid $border;
+  font-size: 1em;
+  text-align: center;
+  color: $dark;
+  text-decoration: none;
+  padding: 1em 2em;
+  &:hover{
+    border: 2px solid $highlight;
+    color: $highlight;
+  }
+}
