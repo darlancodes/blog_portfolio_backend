@@ -10,7 +10,7 @@
 </head>
 <body>
   <header id="main_navigation" class="clearfix">
-    <a href="index.html" class="name">Darlan Ricardo</a>
+    <%= link_to "Darlan Ricardo", root_path, class: "name"%>
     <nav>
       <%= link_to  "Articles", posts_path %>
       <a href="#">Projects</a>
@@ -18,7 +18,19 @@
     </nav>
   </header>
 
-<%= yield %>
+  <%= yield %>
+
+  <footer id="main_footer">
+    <p class="copyright">
+      &copy; 2015 Darlan Ricardo (by MackCh)
+    </p>
+    <nav>
+      <a href="http://bit.do/drdrafts" target="_blank"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/DarlanR" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://github.com/DarlanRic" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </nav>
+    <br>
+  </footer>
 
 </body>
 </html>
