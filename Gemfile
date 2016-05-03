@@ -23,9 +23,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'normalize-scss', '~> 4.1'
 #redcarpetfor markdown syntax highlighting
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
-#buby code highlighting in the posts 
+#buby code highlighting in the posts
 gem 'pygments.rb', '~> 0.6.3'
-
+#frieldly id gem https://github.com/norman/friendly_id
+gem 'friendly_id', '~> 5.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
