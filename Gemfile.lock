@@ -78,6 +78,10 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     normalize-scss (4.1.0)
       sass (~> 3.3)
+    posix-spawn (0.3.11)
+    pygments.rb (0.6.3)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.2.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -108,6 +112,7 @@ GEM
     rake (11.1.2)
     rdoc (4.2.2)
       json (~> 1.4)
+    redcarpet (3.3.4)
     sass (3.4.22)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -140,6 +145,7 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
+    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -151,7 +157,9 @@ DEPENDENCIES
   jquery-rails
   mysql2 (>= 0.3.13, < 0.5)
   normalize-scss (~> 4.1)
+  pygments.rb (~> 0.6.3)
   rails (= 4.2.6)
+  redcarpet (~> 3.3, >= 3.3.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

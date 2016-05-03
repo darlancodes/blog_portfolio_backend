@@ -21,6 +21,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # normalize-scss
 gem 'normalize-scss', '~> 4.1'
+#redcarpetfor markdown syntax highlighting
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+#buby code highlighting in the posts 
+gem 'pygments.rb', '~> 0.6.3'
 
 
 group :development, :test do
