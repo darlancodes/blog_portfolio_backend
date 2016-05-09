@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   #Before anything it is going to find the post
   before_action :find_post, only: [:show, :edit,:update,:destroy]
   def index
-    @posts = Post.all.order("created_at desc")
+    @posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 3)
   end
 
   #Creation of new posts inside form

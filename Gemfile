@@ -27,6 +27,8 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'pygments.rb', '~> 0.6.3'
 #frieldly id gem https://github.com/norman/friendly_id
 gem 'friendly_id', '~> 5.1'
+#Pagination gem
+gem 'will_paginate', '~> 3.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
