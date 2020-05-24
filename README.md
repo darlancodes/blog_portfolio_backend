@@ -1,8 +1,7 @@
-###Rails Rocks !!
 
-####Back End of the Blog and Portfolio.
+#### Blog and Portfolio site built with Rails
 
-#####Features in the Project:
+##### Gems in the Project:
 
  - Disqus comments
  - User authentication with devise
@@ -10,5 +9,4 @@
  - markdown and code syntax for posts, with pygments.rb and redcarpet gems
  - Pagination with the will_paginate gem
 
- :)
 
